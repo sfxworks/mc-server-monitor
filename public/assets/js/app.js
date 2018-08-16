@@ -4,7 +4,7 @@ var sterr = [];
 
 
 $(document).ready(function(){
-    var socket = io.connect('http://lapitos.thebobsgamingnetwork.net:25576/log');
+    var socket = io.connect('http://' + document.domain + ':25577/log');
     
     socket.on('stout', function(msg)
     {        
