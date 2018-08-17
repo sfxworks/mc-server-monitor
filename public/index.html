@@ -28,23 +28,25 @@
                         </table>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-xl-12 offset-xl-0">
-                    <h1 class="text-center">Warnings</h1>
-                    <p class="text-nowrap text-white-50 bg-dark" id="warn" style="height:200px;overflow:auto;">Waiting for new warnings...</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-xl-12">
-                    <h1 class="text-center">Errors</h1>
-                    <p class="text-nowrap text-white-50 bg-dark" id="error" style="height:200px;overflow:auto;">Waiting for new errors...</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-xl-12">
-                    <h1 class="text-center">Info</h1>
-                    <p class="text-nowrap text-white-50 bg-dark" id="info" style="height:200px;overflow:auto;">Waiting for new info...</p>
+                <div class="col">
+                    <div>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-1">Info</a></li>
+                            <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2">Warnings</a></li>
+                            <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-3">Errors</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane" role="tabpanel" id="tab-1">
+                                <p class="text-white-50 bg-dark" id="info" style="height:800px;overflow:auto;">Waiting for new info...</p>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" id="tab-2">
+                                <p class="text-white-50 bg-dark" id="warn" style="height:800px;overflow:auto;">Waiting for new warnings...</p>
+                            </div>
+                            <div class="tab-pane active" role="tabpanel" id="tab-3">
+                                <p class="text-white-50 bg-dark" id="error" style="height:800px;overflow:auto;">Waiting for new errors...</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -52,6 +54,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+    <script src="assets/js/mc-colorcode-parser.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 
