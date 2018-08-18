@@ -62,6 +62,7 @@ class LogReader(Thread):
                     cur = f.tell()
             except IOError:
                 pass
+            sleep(0.5)
     def run(self):
         self.listenToLogs()
 
